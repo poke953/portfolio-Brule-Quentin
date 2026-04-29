@@ -1,50 +1,58 @@
 body {
-    background-color: #FDBCB4; /* peach */
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40;
+    line-height: 1.6;
 }
 
 .presentation {
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: #333;
     margin-top: 50px;
 }
 
-/* Styles for the compétences table */
+/* Styles pour le tableau des compétences */
 .compétences {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .compétences tbody {
-    background: #ffe1bf;
+    background: #fff;
 }
-.competences-section h2 {
-    border: 4px solid #ffe1bf;
-    padding: 8px 12px;
-}
-.compétences th,.compétences td {
-    border: 1px solid #ffe1bf;
-    padding: 8px 12px;
+
+.compétences th, .compétences td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
     text-align: center;
 }
+
 .compétences thead th {
-    background: #f5f5f5;
-}
-.compétences tbody tr:nth-child(even) {
-    background: #fafafa;
+    background: #e9ecef;
+    color: #343a40;
+    font-weight: 600;
 }
 
-/* Center the Compétences heading */
+.compétences tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
 .competences-section h2 {
     text-align: center;
+    color: #198754;
+    border-bottom: 2px solid #198754;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
 }
 
-/* ===== HEADER / NAVBAR ===== */
+/* Header / Navbar */
 header {
-    background-color: #ff7777; /* violet */
-    padding: 10px 0;
+    background-color: #0d6efd;
+    border-radius: 15px;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
@@ -57,75 +65,68 @@ header {
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin: 0 15px;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: white;
-    font-family: Arial, sans-serif;
-    font-weight: bold;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: background 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    background-color: #ff7777; /* darker violet on hover */
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Responsive navbar - Tablettes et écrans moyens */
+/* Responsive navbar */
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
         align-items: center;
     }
-    
     .navbar ul li {
         margin: 8px 0;
     }
 }
 
-/* Responsive navbar - Petits écrans (téléphones) */
 @media (max-width: 480px) {
     .navbar ul {
         flex-direction: column;
         align-items: center;
         padding: 10px 0;
     }
-    
     .navbar ul li {
         margin: 5px 0;
         width: 100%;
         text-align: center;
     }
-    
     .navbar ul li a {
         display: block;
         padding: 10px 8px;
     }
 }
 
-/* Contact form layout and grey square background */
+/* Contact form */
 .contact-page {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
     min-height: 60vh;
+    background: #f8f9fa;
 }
 
 .contact-box {
-    background: #ffc3c3; /* gris clair */
+    background: #fff;
     margin-bottom: 30px;
     width: 400px;
-    height: 400px; /* carré */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgb(0, 0, 0);
-    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
@@ -137,35 +138,37 @@ header {
     display: block;
     margin-bottom: 6px;
     font-weight: 600;
+    color: #343a40;
 }
 
 .contact-form input,
 .contact-form textarea {
     width: 100%;
     box-sizing: border-box;
-    padding: 8px 10px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #dee2e6;
     border-radius: 4px;
     margin-bottom: 12px;
 }
 
 .contact-form button {
-    background: #ff7777; /* match navbar */
+    background: #0d6efd;
     color: #fff;
     border: none;
     padding: 10px 14px;
     border-radius: 4px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .contact-form button:hover {
-    background: #ff7777;
+    background: #0b5ed7;
 }
 
-/* OneDrive document button */
+/* OneDrive button */
 .onedrive-btn {
     display: inline-block;
-    background: #6a0dad; /* violet */
+    background: #0d6efd;
     color: #fff;
     padding: 10px 14px;
     border-radius: 6px;
@@ -174,26 +177,19 @@ header {
 }
 
 .onedrive-btn:hover {
-    background: #520a9e;
+    background: #0b5ed7;
 }
 
 @media (max-width: 480px) {
     .contact-box {
         width: 92%;
-        height: auto;
-        padding: 18px;
+        padding: 20px;
     }
 }
 
-.welcome {
+.welcome, .section-projet {
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: #555;
-    margin-top: 30px;
-}
-.section-projet{
-    text-align: center;
-    font-family: Arial, sans-serif;
-    color: #555;
+    font-family: 'Segoe UI', sans-serif;
+    color: #343a40;
     margin-top: 30px;
 }
