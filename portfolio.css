@@ -193,3 +193,29 @@ header {
     color: #343a40;
     margin-top: 30px;
 }
+.projet_première_année {
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #343a40;
+    margin-top: 30px;
+}
+.projet_première_année img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+.projet_deuxième_année{
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: #343a40;
+    margin-top: 30px;
+}
+.projet_deuxième_année img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
